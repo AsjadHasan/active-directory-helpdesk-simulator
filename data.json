@@ -1,0 +1,118 @@
+{
+  "users": {
+    "jim": {
+      "full_name": "jim asjad hasan",
+      "password_hash": "f9d09b50361b8d3566afbe946a5f4aea:61fc1a4afc235d46a6fe5abdc36cc15293dc801681965fceb5ea4e362a045b4e",
+      "enabled": true,
+      "locked": false,
+      "failed_attempts": 0
+    },
+    "sawda": {
+      "full_name": "jim sawda",
+      "password_hash": "f946f76a84c072a1a75797b152b1c9d8:828d26f5737ad82dd3c6f32b58d58a5350c5f05287e5d02cdf6575018f2c1ca6",
+      "enabled": true,
+      "locked": false,
+      "failed_attempts": 0
+    }
+  },
+  "groups": {
+    "IT": [
+      "jim"
+    ],
+    "HR": [],
+    "Finance": []
+  },
+  "resources": {
+    "IT-Share": [
+      "IT"
+    ],
+    "HR-Share": [
+      "HR"
+    ],
+    "Finance-Share": [
+      "Finance"
+    ]
+  },
+  "audit": [
+    {
+      "time": "2026-11-13T13:14:23+00:00",
+      "action": "CREATE_USER",
+      "details": "jim"
+    },
+    {
+      "time": "2026-11-13T13:18:13+00:00",
+      "action": "CREATE_USER",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:18:48+00:00",
+      "action": "CHECK_ACCESS",
+      "details": "jim -> IT-Share: DENY"
+    },
+    {
+      "time": "2026-11-13T13:19:09+00:00",
+      "action": "ADD_TO_GROUP",
+      "details": "jim -> IT"
+    },
+    {
+      "time": "2026-11-13T13:19:37+00:00",
+      "action": "CHECK_ACCESS",
+      "details": "jim -> IT-Share: ALLOW"
+    },
+    {
+      "time": "2026-11-13T13:21:38+00:00",
+      "action": "LOGIN_FAILED",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:21:48+00:00",
+      "action": "LOGIN_FAILED",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:21:55+00:00",
+      "action": "ACCOUNT_LOCKED",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:22:21+00:00",
+      "action": "UNLOCK_USER",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:22:40+00:00",
+      "action": "LOGIN_SUCCESS",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:23:10+00:00",
+      "action": "RESET_PASSWORD",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:23:39+00:00",
+      "action": "LOGIN_SUCCESS",
+      "details": "sawda"
+    },
+    {
+      "time": "2026-11-13T13:25:40+00:00",
+      "action": "DISABLE_USER",
+      "details": "jim"
+    },
+    {
+      "time": "2026-11-13T13:26:04+00:00",
+      "action": "CHECK_ACCESS",
+      "details": "jim -> IT-Share: DENY"
+    },
+    {
+      "time": "2026-11-13T13:26:12+00:00",
+      "action": "ENABLE_USER",
+      "details": "jim"
+    },
+    {
+      "time": "2026-11-13T13:26:37+00:00",
+      "action": "CHECK_ACCESS",
+      "details": "jim -> IT-Share: ALLOW"
+    }
+  ]
+}
